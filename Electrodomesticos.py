@@ -39,17 +39,17 @@ class Electrodomesticos:
 
     #Método precio final
     def precioFinalc(self):
-        if self.__consEnerg == "A" and "a":
+        if self.__consEnerg == "A" or "a":
             self.__pvbase = int(self.__pvbase) + 100
-        elif self.__consEnerg == "B" and "b":
+        elif self.__consEnerg == "B" or "b":
             self.__pvbase = int(self.__pvbase) + 80
-        elif self.__consEnerg == "C" and "c":
+        elif self.__consEnerg == "C" or "c":
             self.__pvbase = int(self.__pvbase) + 60
-        elif self.__consEnerg == "D" and "d":
+        elif self.__consEnerg == "D" or "d":
             self.__pvbase = int(self.__pvbase) + 50
-        elif self.__consEnerg == "E" and "e":
+        elif self.__consEnerg == "E" or "e":
             self.__pvbase = int(self.__pvbase) + 30
-        elif self.__consEnerg == "F" and "f":
+        elif self.__consEnerg == "F" or "f":
             self.__pvbase = int(self.__pvbase) + 10
 
     def precioFinalp(self):
