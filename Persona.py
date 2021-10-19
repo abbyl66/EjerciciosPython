@@ -61,10 +61,7 @@ class Persona:
     #Método para introducir sexo
     def introducirSexo(self, sexo):
         if sexo != "F" or "M":
-            return True
-        elif sexo == "F" or "M":
-            return False
-
+            self.__sexo="M"
 
     #Método ToString
     def __str__(self):
