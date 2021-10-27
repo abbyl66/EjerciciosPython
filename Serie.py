@@ -2,11 +2,12 @@
 class Serie:
 
     #Constructor
-    def __init__(self, titulo="", numTemp=3, genero="", creador=""):
+    def __init__(self, titulo="", numTemp=3, genero="", creador="", entregado="False"):
         self.titulo = titulo
         self.numTemp = numTemp
         self.genero = genero
         self.creador = creador
+        self.entregado=entregado
 
     #Métodos get y set
 
@@ -34,19 +35,14 @@ class Serie:
     def __str__(self):
         return "Titulo: "+self.titulo+" | Numero de temporadas: "+str(self.numTemp)+" | Género: "+self.genero+" | Creador: "+self.creador
 
-    def entregado(self):
-        self.entregado=True
-
 if __name__ == "__main__":
-    list_series = [Serie(titulo="Rick y Morty",numTemp=5,genero="Animacion",creador="Justin Roiland, Dan Harmon"),
+    list_series = [Serie(titulo="Rick y Morty",numTemp=5,genero="Animacion",creador="Justin Roiland, Dan Harmon", entregado="True"),
                    Serie(titulo="Sabrina", numTemp=4, genero="Drama", creador="Elisa"),
-                   Serie(titulo="Rebelde", numTemp=2, genero="Comedia", creador="Daniel"),
+                   Serie(titulo="Rebelde", numTemp=2, genero="Comedia", creador="Daniel",entregado="True"),
                    Serie(titulo="Vacaciones", numTemp=3, genero="Comedia", creador="Christian"),
-                   Serie(titulo="Vlog", numTemp=2, genero="Tragedia", creador="Leo")]
+                   Serie(titulo="Vlog", numTemp=2, genero="Tragedia", creador="Leo",entregado="True")]
 
     for i in list_series:
         print(i)
-
-
 
 
